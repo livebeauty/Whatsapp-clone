@@ -5,7 +5,7 @@ import ChatBoxReciever, { ChatBoxSender } from './ChatBox';
 import InputText from './InputText';
 
 const ChatContainer = () => {
-  const socketio = socketIOClient("http://localhost:4200");
+  const socketio = socketIOClient("https://whatsapp-server-ecf2.onrender.com");
 
   const [chat, setChats] = useState([]);
   const [user, setUser] = useState(localStorage.getItem("user"));
